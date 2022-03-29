@@ -7,10 +7,10 @@ metatype: json
   "name": "JetBrains Mono Font",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "JetBrains Mono font for Standard Notes editor.",
   "url": "https://aifdn.github.io/SN-JetBrains-Mono/dist/dist.css",
-  "download_url": "https://codeload.github.com/aiFdn/SN-JetBrains-Mono/zip/refs/tags/1.1.4",
+  "download_url": "https://codeload.github.com/aiFdn/SN-JetBrains-Mono/zip/refs/tags/1.1.5",
   "latest_url": "https://listed.to/p/xxSlhfXCEN",
   "marketing_url": "https://github.com/aiFdn/SN-JetBrains-Mono",
   "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.jpg"
