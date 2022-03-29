@@ -21,3 +21,5 @@ jobs:
       - uses: elgohr/Github-Release-Action@master
         env:
           GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
+        with:
+          args: ${{ github.run_id }}
