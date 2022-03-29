@@ -13,7 +13,7 @@ metatype: json
   "download_url": "https://github.com/aiFdn/SN-JetBrains-Mono/archive/refs/heads/main.zip",
   "latest_url": "https://listed.to/p/xxSlhfXCEN",
   "marketing_url": "https://github.com/aiFdn/SN-JetBrains-Mono",
-  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.png",
+  "thumbnail_url": "https://aifdn.github.io/SN-JetBrains-Mono/thumbnail/thumbnail.png",
   "dock_icon": {
     "type": "circle",
     "background_color": "#304ffe",
