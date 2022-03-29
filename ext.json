@@ -7,17 +7,17 @@ metatype: json
   "name": "JetBrains Mono",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "JetBrains Mono for Standard Notes editor.",
   "url": "https://aifdn.github.io/SN-JetBrains-Mono/main.css",
   "download_url": "https://github.com/aiFdn/SN-JetBrains-Mono/archive/refs/heads/main.zip",
   "latest_url": "https://listed.to/p/xxSlhfXCEN",
   "marketing_url": "https://github.com/aiFdn/SN-JetBrains-Mono",
-  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.jpg",
+  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.png",
   "dock_icon": {
     "type": "circle",
-    "background_color": "#086DD6",
+    "background_color": "#304ffe",
     "foreground_color": "#ffffff",
-    "border_color": "#086DD6"
+    "border_color": "#304ffe"
  }
 }
