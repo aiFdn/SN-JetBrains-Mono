@@ -21,10 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Set env
-        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - uses: elgohr/Github-Release-Action@master
         env:
           GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
         with:
-          args: ${{ env.RELEASE_VERSION }}
+          args: ${{ steps.get_version.outputs.VERSION }}
