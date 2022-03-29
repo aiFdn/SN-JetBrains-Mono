@@ -4,12 +4,24 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
 
 jobs:
-  build:
+  create_tag:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: butlerlogic/action-autotag@stable
       env:
         GITHUB_TOKEN: "${{ secrets.GTHB_TOKEN }}"
+
+  publish_release:
+    runs-on: ubuntu-latest
+    needs: create_tag
+    steps:
+    - uses: actions/checkout@master
+    - name: Create a Release
+      uses: elgohr/Github-Release-Action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}

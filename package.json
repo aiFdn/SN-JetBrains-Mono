@@ -1,6 +1,6 @@
 {
   "name": "io.github.aifdn.sn-jetbrains-mono",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/dist.css",
   "sn": {
     "main": "dist/dist.css"
