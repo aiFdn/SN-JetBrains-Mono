@@ -1,0 +1,12 @@
+{
+  "name": "sn-jetbrains-mono",
+  "version": "1.0.0",
+  "main": "dist/dist.css",
+  "sn": {
+    "main": "dist/dist.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiFdn/SN-JetBrains-Mono.git"
+  }
+}

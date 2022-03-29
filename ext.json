@@ -1,0 +1,17 @@
+---
+metatype: json
+---
+
+{
+  "identifier": "io.github.aifdn.sn-jetbrains-mono",
+  "name": "JetBrains Mono Font",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "1.0.0",
+  "description": "JetBrains Mono font for Standard Notes editor.",
+  "url": "https://cdn.jsdelivr.net/gh/aiFdn/SN-JetBrains-Mono@main/css/dist.css",
+  "download_url": "https://github.com/aiFdn/SN-JetBrains-Mono/archive/refs/heads/main.zip",
+  "latest_url": "https://listed.to/p/xxSlhfXCEN",
+  "marketing_url": "https://github.com/aiFdn/SN-JetBrains-Mono",
+  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.jpg"
+}
