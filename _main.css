@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
 :root {
   --sn-stylekit-base-font-size: 15px !important;
   --sn-stylekit-monospace-font: "JetBrains Mono", courier, monospace !important;
