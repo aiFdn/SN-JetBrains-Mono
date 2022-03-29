@@ -29,3 +29,12 @@ jobs:
           GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
         with:
           args: ${{ steps.get_version.outputs.VERSION }}
+  
+  delete_draft_tags:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delete draft release tags
+        uses: hugo19941994/delete-draft-releases@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}
