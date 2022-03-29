@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
 :root {
   --sn-stylekit-monospace-font: "JetBrains Mono", courier, monospace !important;
   --sn-stylekit-sans-serif-font: "JetBrains Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
