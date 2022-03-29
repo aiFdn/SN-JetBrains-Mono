@@ -1,4 +1,5 @@
 :root {
-  --sn-stylekit-monospace-font: "JetBrains Mono", courier, monospace !important;
-  --sn-stylekit-sans-serif-font: "JetBrains Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  --sn-stylekit-base-font-size: 15px;
+  --sn-stylekit-monospace-font: 'JetBrains Mono', courier, monospace !important;
+  --sn-stylekit-sans-serif-font: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
 }
