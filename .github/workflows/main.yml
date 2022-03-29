@@ -4,8 +4,6 @@ on:
   push:
     branches: 
       - main
-    tags:
-      - v*
 
 jobs:
   create_tag:
@@ -31,8 +29,8 @@ jobs:
           args: ${{ steps.get_version.outputs.VERSION }}
   
   delete_draft_tags:
+    needs: publish_release
     runs-on: ubuntu-latest
-
     steps:
       - name: Delete draft release tags
         uses: hugo19941994/delete-draft-releases@v1.0.0
