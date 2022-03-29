@@ -4,14 +4,20 @@ metatype: json
 
 {
   "identifier": "io.github.aifdn.sn-jetbrains-mono",
-  "name": "JetBrains Mono Font",
+  "name": "JetBrains Mono",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.1.9",
-  "description": "JetBrains Mono font for Standard Notes editor.",
+  "version": "1.1.10",
+  "description": "JetBrains Mono for Standard Notes editor.",
   "url": "https://aifdn.github.io/SN-JetBrains-Mono/main.css",
   "download_url": "https://github.com/aiFdn/SN-JetBrains-Mono/archive/refs/heads/main.zip",
   "latest_url": "https://listed.to/p/xxSlhfXCEN",
   "marketing_url": "https://github.com/aiFdn/SN-JetBrains-Mono",
-  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.jpg"
+  "thumbnail_url": "https://github.com/aiFdn/SN-JetBrains-Mono/thumbnail/thumbnail.jpg",
+  "dock_icon": {
+    "type": "circle",
+    "background_color": "#086DD6",
+    "foreground_color": "#ffffff",
+    "border_color": "#086DD6"
+ }
 }

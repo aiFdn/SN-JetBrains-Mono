@@ -1,4 +1,4 @@
-# JetBrains Mono Font for Standard Notes
+# JetBrains Mono for Standard Notes
 
 ## Installation
 
