@@ -14,22 +14,8 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
 
-  publish_release:
-    needs: create_tag
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-      - uses: elgohr/Github-Release-Action@master
-        env:
-          GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
-        with:
-          args: ${{ steps.get_version.outputs.VERSION }}
-  
   delete_draft_tags:
-    needs: publish_release
+    needs: create_tag
     runs-on: ubuntu-latest
     steps:
       - name: Delete draft release tags
