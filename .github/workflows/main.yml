@@ -7,19 +7,19 @@ jobs:
   create_tag:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Create Tag
-    - uses: butlerlogic/action-autotag@stable
-      env:
-        GITHUB_TOKEN: "${{ secrets.GTHB_TOKEN }}"
-
+      - uses: actions/checkout@v2
+      - name: Create Tag
+      - uses: butlerlogic/action-autotag@stable
+        env:
+          GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
+          
   publish_release:
-    if: ${{ always() }}
+    if: '${{ always() }}'
     needs: create_tag
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Create a Release
-      uses: elgohr/Github-Release-Action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}
+      - uses: actions/checkout@master
+      - name: Create a Release
+      - uses: elgohr/Github-Release-Action@master
+        env:
+          GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
