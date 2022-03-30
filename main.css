@@ -29,5 +29,6 @@ textarea {
 
 #notes-column .note .meta .name-container,
 .notes .note .meta .name-container {
-  font-size: 14px;
+  font-size: 14px !important;
+  font-weight: 700 !important;
 }
