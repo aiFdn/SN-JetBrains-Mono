@@ -8,13 +8,26 @@
   font-variant-ligatures: common-ligatures !important;
 }
 
+html,
+body,
 .editor-content .editable,
 #editor-content .editable,
 .editable,
 .font-editor,
-#note-text-editor {
-  font-family: "JetBrains Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif !important;
+.editor-content,
+#note-text-editor,
+textarea {
+  font-family: "JetBrains Mono", courier, monospace, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
   font-variant-ligatures: common-ligatures !important;
+  -webkit-font-feature-settings: "liga" 1 !important;
+  -moz-font-feature-settings: "liga" 1 !important;
+  -ms-font-feature-settings: "liga" 1 !important;
+  font-feature-settings: "liga" 1 !important;
+}
+
+#notes-column .note .meta .name-container,
+.notes .note .meta .name-container {
+  font-size: 14px;
 }
