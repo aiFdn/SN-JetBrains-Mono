@@ -12,7 +12,7 @@ The developers/ programmers can enjoy editing with Standard Notes with JetBrains
 
 
 ```
-https://listed.to/p/xxSlhfXCEN
+https://listed.to/p/qfsG0hfkre
 ```
 
 ## Preview
