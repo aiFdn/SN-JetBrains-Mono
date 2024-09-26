@@ -9,8 +9,8 @@ jobs:
   create_tag:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: butlerlogic/action-autotag@stable
+      - uses: actions/checkout@v4
+      - uses: ButlerLogic/action-autotag@1.1.4
         env:
           GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
 
@@ -19,6 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete draft release tags
-        uses: hugo19941994/delete-draft-releases@v1.0.0
+        uses: hugo19941994/delete-draft-releases@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}
