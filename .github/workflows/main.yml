@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ButlerLogic/action-autotag@1.1.2
         env:
-          GITHUB_TOKEN: '${{ secrets.GTHB_TOKEN }}'
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
   delete_draft_tags:
     needs: create_tag
@@ -21,4 +21,4 @@ jobs:
       - name: Delete draft release tags
         uses: hugo19941994/delete-draft-releases@v1.0.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
