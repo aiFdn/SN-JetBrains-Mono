@@ -5,6 +5,13 @@ on:
     branches: 
       - main
 
+permissions:
+  contents: write
+  repository-projects: write
+  deployments: write
+  packages: write
+  actions: write
+
 jobs:
   version_and_release:
     runs-on: ubuntu-latest
