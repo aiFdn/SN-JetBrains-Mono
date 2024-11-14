@@ -6,19 +6,31 @@ on:
       - main
 
 jobs:
-  create_tag:
+  version_and_release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ButlerLogic/action-autotag@1.1.2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Bump version
+        id: bump_version
+        run: |
+          NEW_VERSION=$(npm version patch -m "Bump version to %s")
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+      - name: Push changes
+        run: |
+          git push origin main
+          git push origin --tags
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-  delete_draft_tags:
-    needs: create_tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Delete draft release tags
-        uses: hugo19941994/delete-draft-releases@v1.0.1
+      - name: Create Release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          tag_name: ${{ steps.bump_version.outputs.new_version }}
+          release_name: Release ${{ steps.bump_version.outputs.new_version }}
